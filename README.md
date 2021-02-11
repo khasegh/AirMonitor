@@ -1,10 +1,9 @@
 # AirMonitor
-M5Stack Air Quality monitor
+Air Quality monitor for M5Stack
 
 ## 概要/Overview
 M5Stackを使って、空気環境を測定するデバイスを作りました。<BR>
 CCS811,BME280という２つのセンサーを使って下記の５項目を測定し、M5Stackの画面に表示します。<BR>
-wifiネットワークは不要で、電源を繋いでおけば動作します。<BR>
 - 温度/Temperature [℃, 摂氏]
 - 湿度/Humidity [%]
 - 気圧/Pressure [hPa, ヘクトパスカル]
@@ -18,6 +17,8 @@ wifiネットワークは不要で、電源を繋いでおけば動作します�
   過去53分間/8時間のデータを折れ線グラフで表示。
 - データ<BR>
   直前13回分の測定値を一覧表示。
+  
+wifiネットワークは不要で、電源を繋いでおけば動作します。<BR>
 
 ### パーツリスト/Parts list
 * M5Stack Basic/GRAY<BR>
