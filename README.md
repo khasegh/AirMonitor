@@ -3,7 +3,7 @@ Air Quality monitor for M5Stack<BR>
 本ページに記載された内容、および プログラムコードは無保証です。
 
 ## 概要/Overview
-<img src="image/hardware.JPG" width="420"><BR>
+<img src="image/hardware.JPG" width="420">
 M5Stackを使って、空気環境を測定するデバイスを作りました。<BR>
 CCS811,BME280という２つのセンサーを使って下記の５項目を測定し、M5Stackの画面に表示します。<BR>
   ||単位|測定範囲|
