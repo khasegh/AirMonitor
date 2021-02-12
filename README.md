@@ -50,7 +50,8 @@ wifiネットワークは不要で、電源を繋いでおけば動作します�
 2. スケッチのダウンロード<BR>
   本ページからairMon.ino、envList.hをダウンロードした後、"airMon"という名前のフォルダに入れます。
 3. ハードウェアの接続<BR>
-   - M5Stackとセンサーを、Qwiic Cableにて接続
+   - M5Stackとセンサーを、Qwiic Cableにて接続<BR>
+     センサーボードにはQwiicコネクタが２つありますが、どちらでも良いみたい。
    - Arduino IDEをインストールしたパソコンのUSBポートに、M5Stackを接続
 4. スケッチのコンパイルと、M5Stackへの書き込み<BR>
   airMon.inoをダブルクリックしてArduino IDEにて開いた後、「マイコンボードに書き込む」を実行。
