@@ -5,11 +5,15 @@ Air Quality monitor for M5Stack<BR>
 ## 概要/Overview
 M5Stackを使って、空気環境を測定するデバイスを作りました。<BR>
 CCS811,BME280という２つのセンサーを使って下記の５項目を測定し、M5Stackの画面に表示します。<BR>
-- 温度/Temperature [℃, 摂氏]
-- 湿度/Humidity [%]
-- 気圧/Pressure [hPa, ヘクトパスカル]
-- 二酸化炭素相当物/eCO2 [ppm]
-- 総揮発性有機化合物/TVOC [ppb]
+  ||単位|測定範囲|
+  |:---:|:---:|:---:|
+  |温度/Temperature|℃, 摂氏|-40℃ to +85℃|
+  |湿度/Humidity|%|0% to 100%|
+  |気圧/Pressure|hPa, ヘクトパスカル|300hPa to 1100hPa|
+  |二酸化炭素相当物/eCO2|ppm|400ppm to 8192ppm|
+  |総揮発性有機化合物/TVOC|ppb|0ppb to 1187ppb|
+  
+※測定範囲は、センサーの仕様に基づく
   
 測定値はM5Stackの液晶画面に表示され、下記３つの表示モードがあります。
 - 現在値モニタ<BR>
@@ -87,6 +91,16 @@ wifiネットワークは不要で、電源を繋いでおけば動作します�
 ## 技術的なこと/Technical notes
 - データ領域は循環して使用するので、リング型のバッファとしています。
 - バッファサイズは3006個であり、10秒毎に測定するので10秒x3006回で8.35時間分の測定値を内部メモリーに保存しています。
-- 測定値を漏れなく記録するため、測定値を記録するスレッドと画面表示スレッドは別に分けて動作しています。
+- 測定値を漏れなく記録するため、測定値を記録する処理と画面を表示する処理は別スレッドに分けています。
 - スレッド間で競合する部分は、排他処理としています。
-- CCS811とBME280が一緒になったコンボボードではなく、別になったボードをデイジーチェーン接続しても動作するかもしれない。<BR>その場合は、I2Cアドレス(CSS811_ADDR)の定義を変更すると良いかも。
+- CCS811とBME280が別になったボードをデイジーチェーン接続しても動作するかもしれない。<BR>
+  その場合は、I2Cアドレス(CSS811_ADDR)の定義を変更すると良いかも。
+  
+## 参考資料
+ - BME280センサー仕様<BR>
+  https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/
+ - CCS811センサー仕様<BR>
+  https://cdn.sparkfun.com/assets/learn_tutorials/1/4/3/CCS811_Datasheet-DS000459.pdf
+ - 神楽坂らせんちゃんさんのgithub<BR>
+   色々参考にさせていただいてます^^;<BR>
+   https://github.com/kagurazakarasen
