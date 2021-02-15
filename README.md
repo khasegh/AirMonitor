@@ -130,7 +130,7 @@ http://jsoh-ohe.umin.jp/covid_simulator/covid_simulator.html<BR>
 - CCS811とBME280が別になったボードをデイジーチェーン接続しても、動作するかもしれないです。<BR>
   その場合は、I2Cアドレス(CSS811_ADDR)の定義を変更すると良いかも。
   
-## 参考資料
+## 参考資料/References
  - BME280センサー仕様<BR>
   https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/
  - CCS811センサー仕様<BR>
