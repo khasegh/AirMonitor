@@ -74,7 +74,7 @@ CCS811,BME280という２つのセンサーを使って下記の５項目を測�
 右側の棒グラフはCO2レベルを表わしたもので、下記のように色が変化します。<BR>
 基準は、日本産業衛生学会様のホームページを参考にしました。<BR>
 http://jsoh-ohe.umin.jp/covid_simulator/covid_simulator.html<BR>
-|CO2値|表示色|状態|
+|CO2値|表示色|換気状態|
 |:---:|:---:|:---:|
 |0ppm ～ 1000ppm|緑|良い|
 |1000ppm ～ 1500ppm|黄色|やや良い|
@@ -82,7 +82,7 @@ http://jsoh-ohe.umin.jp/covid_simulator/covid_simulator.html<BR>
 |2500ppm ～ 3500ppm|ピンク|非常に悪い|
 |3500ppm ～ 6000ppm|赤|極めて悪い|
 |6000ppm ～|棒グラフ全体が赤くなります|〃|
- 　
+
 #### グラフモード<BR>
   53分グラフ<BR>
   <img src="image/graph2.JPG" width="320"><BR>
