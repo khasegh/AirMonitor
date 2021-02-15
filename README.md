@@ -82,7 +82,7 @@ http://jsoh-ohe.umin.jp/covid_simulator/covid_simulator.html<BR>
 |2500ppm ～ 3500ppm|ピンク|非常に悪い|
 |3500ppm ～ 6000ppm|赤|極めて悪い|
 |6000ppm ～|棒グラフ全体が赤くなります|〃|
-  
+ 　
 #### グラフモード<BR>
   53分グラフ<BR>
   <img src="image/graph2.JPG" width="320"><BR>
