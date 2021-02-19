@@ -28,12 +28,12 @@ CCS811,BME280という２つのセンサーを使って下記の５項目を測�
   私はGRAYを使いましたが、Basicでもいけるはず。。未確認
 * SparkFun Environmental Combo Breakout - CCS811/BME280 (Qwiic)<BR>
   https://www.sparkfun.com/products/14348<BR>
-~~* Qwiic Cable - Grove Adapter (100mm)~~<BR>
-  https://www.sparkfun.com/products/15109<BR>
-  私はブレッドボードを使いましたが、このケーブルでいけるはず。。未確認
 * 適当なUSB Type-C電源<BR>
   M5Stackへの電源供給用。
-  
+~~Qwiic Cable - Grove Adapter (100mm)~~<BR>
+  試したところ、このケーブルは使えませんでした。。
+  M5StackのGroveコネクタの出力は5Vだけど、このセンサーは3.3Vを要求しているので。
+
 ## 組み立て方/How to build
 1. Arduino IDEをセットアップ<BR>
   Arduino IDEをインストールしてM5Stackとの通信COMポートを設定した後、必要なライブラリをインストールします。
