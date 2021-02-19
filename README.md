@@ -28,7 +28,7 @@ CCS811,BME280という２つのセンサーを使って下記の５項目を測�
   私はGRAYを使いましたが、Basicでもいけるはず。。未確認
 * SparkFun Environmental Combo Breakout - CCS811/BME280 (Qwiic)<BR>
   https://www.sparkfun.com/products/14348<BR>
-~~Qwiic Cable - Grove Adapter (100mm)~~<BR>
+~~* Qwiic Cable - Grove Adapter (100mm)~~<BR>
   https://www.sparkfun.com/products/15109<BR>
   私はブレッドボードを使いましたが、このケーブルでいけるはず。。未確認
 * 適当なUSB Type-C電源<BR>
