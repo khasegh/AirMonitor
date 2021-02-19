@@ -4,7 +4,7 @@ Air Quality monitor for M5Stack<BR>
 
 ## 概要/Overview
 <img src="image/hardware.JPG" width="420"><BR>
-~~M5Stack~~を使って、空気環境を測定するデバイスを作りました。<BR>
+M5Stackを使って、空気環境を測定するデバイスを作りました。<BR>
 在宅や職場などで、スタンドアローンで空気環境をチェックしたいときにどうぞ。<BR>
 新型コロナ対策で、換気の必要度を判断する際にも有効だと思います。
 
@@ -28,7 +28,7 @@ CCS811,BME280という２つのセンサーを使って下記の５項目を測�
   私はGRAYを使いましたが、Basicでもいけるはず。。未確認
 * SparkFun Environmental Combo Breakout - CCS811/BME280 (Qwiic)<BR>
   https://www.sparkfun.com/products/14348
-~~ Qwiic Cable - Grove Adapter (100mm) ~~
+~~Qwiic Cable - Grove Adapter (100mm)~~
   https://www.sparkfun.com/products/15109<BR>
   私はブレッドボードを使いましたが、このケーブルでいけるはず。。未確認
 * 適当なUSB Type-C電源<BR>
