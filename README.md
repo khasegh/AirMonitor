@@ -32,7 +32,8 @@ CCS811,BME280という２つのセンサーを使って下記の５項目を測�
 * 適当なUSB Type-C電源<BR>
   M5Stackへの電源供給用。<BR>
 
-※試したところ、「Qwiic Cable - Grove Adapter (100mm)」のケーブルは使えませんでした。。<BR>
+※試したところ、「[Qwiic Cable - Grove Adapter (100mm)](https://www.sparkfun.com/products/15109)」のケーブルは使えませんでした。。<BR>
+  https://www.sparkfun.com/products/15109
   M5StackのGroveコネクタの出力は5Vだけど、このセンサーは3.3Vを要求しているので。
 
 ## 組み立て方/How to build
