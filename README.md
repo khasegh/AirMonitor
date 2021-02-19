@@ -45,7 +45,7 @@ CCS811,BME280という２つのセンサーを使って下記の５項目を測�
    - SparkFun CCS811 Arduino Library by SparkFun Electronics<BR>
      https://github.com/sparkfun/SparkFun_CCS811_Arduino_Library
 2. ハードウェアの接続<BR>
-   1. M5Stackとセンサーを、Qwiic Cableにて接続<BR>
+   1. M5Stackとセンサーを接続<BR>
      センサーボードにはQwiicコネクタが２つありますが、どちらでも良いみたい。
    2. Arduino IDEをインストールしたパソコンのUSBポートに、M5Stackを接続
 3. スケッチのダウンロード<BR>
