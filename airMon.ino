@@ -48,6 +48,7 @@ void setup()
   M5.Speaker.mute();
   M5.Lcd.setTextSize(1);
   M5.Lcd.setTextFont(2);
+  M5.Lcd.setBrightness(100);
 
   // initialize CCS811
   if (mySensorCCS.begin() == false) {
@@ -113,13 +114,15 @@ void loop()
     lastReleasedTime = millis();
     if (isSleep) {
       isSleep = false;
-      M5.Lcd.wakeup();
-      M5.Lcd.setBrightness(100);
+      M5.Lcd.wakeup(); //★輝度調節しない場合、コメントアウト
+      M5.Lcd.setBrightness(100); //★輝度調節しない場合、コメントアウト
     }
   } else if (!isSleep && millis() - lastReleasedTime > 180000) { //３分無操作で、画面OFF
     isSleep = true;
-    M5.Lcd.sleep();
-    M5.Lcd.setBrightness(0);
+    M5.Lcd.sleep(); //★輝度調節しない場合、コメントアウト
+    M5.Lcd.setBrightness(0); //★輝度調節しない場合、コメントアウト
+    M5.Lcd.clear(BLACK);
+    prevDispMode = -1;
     lastSleepTime = millis();
   }
 
@@ -151,8 +154,8 @@ void loop()
       do {
         if (ei.CO2 > lvp->minCO2 && lvp->noticeLv > 0) {
           // 通知開始
-          M5.Lcd.wakeup();
-          M5.Lcd.setBrightness(100);
+          M5.Lcd.wakeup(); //★輝度調節しない場合、コメントアウト
+          M5.Lcd.setBrightness(100); //★輝度調節しない場合、コメントアウト
           M5.Lcd.clear(lvp->clr);
           if (lvp->noticeLv > 1) {
             M5.Speaker.setVolume(2); //通知音の大きさ
@@ -167,8 +170,8 @@ void loop()
     }
     else if (millis() - noticeStartTime > 3000) { //通知画面は３秒表示
       // 通知終了
-      M5.Lcd.sleep();
-      M5.Lcd.setBrightness(0);
+      M5.Lcd.sleep(); //★輝度調節しない場合、コメントアウト
+      M5.Lcd.setBrightness(0); //★輝度調節しない場合、コメントアウト
       M5.Lcd.clear(BLACK);
       M5.Speaker.mute();
       isNotice = false;
