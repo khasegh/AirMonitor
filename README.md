@@ -46,7 +46,14 @@ CCS811,BME280という２つのセンサーを使って下記の５項目を測�
      https://github.com/sparkfun/SparkFun_CCS811_Arduino_Library
 2. ハードウェアの接続<BR>
    1. M5Stackとセンサーを接続<BR>
-     センサーボードにはQwiicコネクタが２つありますが、どちらでも良いみたい。
+     M5StackのI2CピンとセンサーのQwiicコネクタを、ブレッドボードなどで繋ぎます。<BR>
+     センサーボードにはQwiicコネクタが２つありますが、どちらでも良いみたい。<BR>
+     |M5Stack側|センサー側|
+     |:---:|:---:|
+     |GND|Black|
+     |3.3V|Red|
+     |SDA|Blue|
+     |Yellow|SCL|
    2. Arduino IDEをインストールしたパソコンのUSBポートに、M5Stackを接続
 3. スケッチのダウンロード<BR>
   本ページからairMon.ino、envList.hをダウンロードした後、"airMon"という名前のフォルダに入れます。
