@@ -34,7 +34,7 @@ CCS811,BME280という２つのセンサーを使って下記の５項目を測�
   M5Stackへの電源供給用。<BR>
 
 ※試したところ、「[Qwiic Cable - Grove Adapter (100mm)](https://www.sparkfun.com/products/15109)」のケーブルは使えませんでした。。<BR>
-  M5StackのGroveコネクタの出力は5Vだけど、このセンサーは3.3Vを要求しているので。
+  M5StackのGroveコネクタの出力は5Vですが、このセンサーは3.3Vを要求しているので。
 
 ## 組み立て方/How to build
 1. Arduino IDEをセットアップ<BR>
