@@ -9,6 +9,7 @@ M5Stackを使って、空気環境を測定するデバイスを作りました�
 新型コロナ対策で、換気の必要度を判断する際にも有効だと思います。
 
 CCS811,BME280という２つのセンサーを使って下記の５項目を測定し、M5Stackの画面に表示します。<BR>
+  
   ||単位|測定範囲|
   |:---:|:---:|:---:|
   |温度/Temperature|℃, 摂氏|-40℃ to +85℃|
@@ -46,14 +47,16 @@ CCS811,BME280という２つのセンサーを使って下記の５項目を測�
      https://github.com/sparkfun/SparkFun_CCS811_Arduino_Library
 2. ハードウェアの接続<BR>
    1. M5Stackとセンサーを接続<BR>
-     M5StackのI2CピンとセンサーのQwiicコネクタを、ブレッドボードなどで繋ぎます。<BR>
+     M5StackのI2CピンとセンサーのQwiicコネクタを、ブレッドボードとジャンパー線などで繋ぎます。<BR>
      センサーボードにはQwiicコネクタが２つありますが、どちらでも良いみたい。<BR>
-     |M5Stack側|センサー側|
-     |:---:|:---:|
-     |GND|Black|
-     |3.3V|Red|
-     |SDA|Blue|
-     |Yellow|SCL|
+  
+       |M5Stack側|センサー側|
+       |:---:|:---:|
+       |GND|Black|
+       |3V3|Red|
+       |SDA|Blue|
+       |SCL|Yellow|
+  
    2. Arduino IDEをインストールしたパソコンのUSBポートに、M5Stackを接続
 3. スケッチのダウンロード<BR>
   本ページからairMon.ino、envList.hをダウンロードした後、"airMon"という名前のフォルダに入れます。
@@ -82,6 +85,7 @@ CCS811,BME280という２つのセンサーを使って下記の５項目を測�
 右側の棒グラフはCO2レベルを表わしたもので、下記のように色が変化します。<BR>
 基準は、日本産業衛生学会様のホームページを参考にしました。<BR>
 http://jsoh-ohe.umin.jp/covid_simulator/covid_simulator.html<BR>
+  
 |CO2値|表示色|換気状態|
 |:---:|:---:|:---:|
 |0ppm ～ 1000ppm|緑|良い|
