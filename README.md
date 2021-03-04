@@ -136,6 +136,7 @@ http://jsoh-ohe.umin.jp/covid_simulator/covid_simulator.html<BR>
   画面が消えている時にボタンを押した時や、CO2通知が表示された時のCO2/TVOCグラフが急に下がっている場合がありますが、これはセンサーに供給する電圧が変動した為です。
   本プログラムでは状況によりLCD輝度を変化させていますが、テスターで調べたところ、M5StackはLCD輝度を変更すると3.3V端子の電圧が微妙に変化するようです。
   CCS811センサーは一定の電源電圧で使用する仕様なので、途中で電圧を変化させると測定値も変化してしまいます。<BR>
+  <img src="image/graph3.JPG" width="320"> 
   <img src="image/3V3output.png" width="420"><BR>
   
   気になる方は、下記の方法で回避出来ます。
