@@ -139,15 +139,15 @@ http://jsoh-ohe.umin.jp/covid_simulator/covid_simulator.html<BR>
   <img src="image/3V3output.png" width="420"><BR>
   
   気になる方は、下記の方法で回避出来ます。
-  - お手軽な方法
+  - お手軽な方法<BR>
     LCD輝度を変化させないようプログラムを修正することにより、グラフが歪まないようにできます。<BR>
     ★印の行（８か所）をコメントアウトしてください。<BR>
     但し、常に画面が光った状態になります。
-  - 完璧な方法
+  - 完璧な方法<BR>
     ブレッドボード上にレギュレータ回路を追加し、M5Stackの5V端子から3.3Vに降圧してからセンサーに入力します。<BR>
     これで、LCD輝度が変化してもグラフが歪まないようになります。<BR>
     <img src="image/regulator.JPG" width="320"><BR>
-    私は下記のレギュレータを使用しました。<BR>
+    私は下記のレギュレータ基板を使用しました。<BR>
     https://www.switch-science.com/catalog/2398/
 
 ## 技術的なこと/Technical notes
