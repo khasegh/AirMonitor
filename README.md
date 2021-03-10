@@ -4,8 +4,7 @@ Air Quality monitor for M5Stack<BR>
 
 ## 概要/Overview
 <img src="image/hardware.JPG" width="420"><BR>
-  [link](https://youtu.be/TSEEqI3S_zQ){:target="_blank"}
-<A href="https://youtu.be/TSEEqI3S_zQ" target="_blank">demo</A>
+<A href="https://youtu.be/TSEEqI3S_zQ" target="_blank">デモ動画へのリンク</A>
 M5Stackを使って、空気環境を測定するデバイスを作りました。<BR>
 在宅や職場などで、スタンドアローンで空気環境をチェックしたいときにどうぞ。<BR>
 新型コロナ対策で、換気の必要度を判断する際にも有効だと思います。
